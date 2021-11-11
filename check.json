@@ -10,7 +10,7 @@
 	"author" : "Michelle Raouf - TBIB",
 	"download_url" : "https://github.com/the-best-is-best/tbib-polylang-acf/releases/download/tbib-polylang-acf-v1/tbib-polylang-acf-master.zip",
 	"sections" : {
-		"description" : "Adds multilingual capability to ACF With Polylang.".
+		"description" : "Adds multilingual capability to ACF With Polylang.",
 		"installation": "(Recommended) Installation instructions.",
                 "changelog": "(Recommended) Changelog. <p>This section will be opened by default when the user clicks 'View version XYZ details'.</p>",
 	},
