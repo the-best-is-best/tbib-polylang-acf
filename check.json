@@ -13,7 +13,7 @@
 	"upgrade_notice": "Test",
 	"author" : "Michelle Raouf - TBIB",
 	"sections": {
-	"description": "<h3> Created <h3> <p> Adds multilingual capability to ACF With Polylang. </p>",
+	"description": "<h3> Created </h3> <p> Adds multilingual capability to ACF With Polylang. </p>",
 	"installation": "Adds multilingual capability to ACF With Polylang."
   }
 }
