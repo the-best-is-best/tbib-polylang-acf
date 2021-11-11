@@ -13,5 +13,17 @@
 		"description" : "Adds multilingual capability to ACF With Polylang.".
 		"installation": "(Recommended) Installation instructions.",
                 "changelog": "(Recommended) Changelog. <p>This section will be opened by default when the user clicks 'View version XYZ details'.</p>",
-	}
+	},
+	"icons": {
+	"1x": "http://w-shadow.com/files/external-update-example/assets/icon-128x128.png",
+	"2x": "http://w-shadow.com/files/external-update-example/assets/icon-256x256.png"
+	},
+	"banners": {
+	"low": "http://w-shadow.com/files/external-update-example/assets/banner-772x250.png",
+	"high": "http://w-shadow.com/files/external-update-example/assets/banner-1544x500.png"
+	},
+	"rating": 90,
+	"num_ratings": 123,
+	"downloaded": 1234,
+	"active_installs": 12345
 }
