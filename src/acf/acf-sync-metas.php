@@ -1,6 +1,7 @@
 <?php
 
-
+require_once plugin_dir_path( __FILE__ )   . 'api/acf.php';
+ 
 /**
  * This class is part of the ACF compatibility.
  * Adds a field setting to decide if the field must be copied, translated or synchronized.
@@ -100,7 +101,7 @@ class TBIB_ACF_Sync_Metas {
 			'copy_once' => __( 'Copy once', 'polylang-pro' ),
 			'sync'      => __( 'Synchronize', 'polylang-pro' ),
 		);
-		$default = in_array( 'post_meta', ACF()->options['sync'] ) ? 'sync' : 'copy_once';
+		$default = in_array( 'post_meta', ACFAPI()->options['sync'] ) ? 'sync' : 'copy_once';
 		$this->render_field_setting( $field, $choices, $default );
 	}
 

@@ -1,5 +1,6 @@
 <?php
 
+require_once plugin_dir_path( __FILE__ )   . 'api/acf.php';
 
 /**
  * This class is part of the ACF compatibility.
@@ -73,7 +74,7 @@ class TBIB_ACF_Auto_Translate {
 	 * @return mixed
 	 */
 	public function load_value( $value, $post_id, $field ) {
-		if ( 'term_0' === $post_id && isset( $_GET['taxonomy'], $_GET['from_tag'], $_GET['new_lang'] ) && taxonomy_exists( sanitize_key( $_GET['taxonomy'] ) ) && $lang = ACF()->model->get_language( sanitize_key( $_GET['new_lang'] ) ) ) { // phpcs:ignore WordPress.Security.NonceVerification
+		if ( 'term_0' === $post_id && isset( $_GET['taxonomy'], $_GET['from_tag'], $_GET['new_lang'] ) && taxonomy_exists( sanitize_key( $_GET['taxonomy'] ) ) && $lang = ACFAPI()->model->get_language( sanitize_key( $_GET['new_lang'] ) ) ) { // phpcs:ignore WordPress.Security.NonceVerification
 
 			$from_tag = (int) $_GET['from_tag']; // phpcs:ignore WordPress.Security.NonceVerification
 			$tr_id    = 'term_' . $from_tag; // Converts to ACF internal id.
@@ -123,7 +124,7 @@ class TBIB_ACF_Auto_Translate {
 			if ( ! empty( $to ) && ( $post_type = get_post_type( $to ) ) && pll_is_translated_post_type( $post_type ) ) {
 				$duplicate_options    = get_user_meta( get_current_user_id(), 'pll_duplicate_content', true );
 				$active               = ! empty( $duplicate_options ) && ! empty( $duplicate_options[ $post_type ] );
-				$create_if_not_exists = $active || ACF()->sync_post_model->are_synchronized( $from, $to );
+				$create_if_not_exists = $active || ACFAPI()->sync_post_model->are_synchronized( $from, $to );
 			}
 
 			$value = $this->translate_field( $value, $lang, $field, $create_if_not_exists );
@@ -184,13 +185,13 @@ class TBIB_ACF_Auto_Translate {
 	 * @return string Modified link.
 	 */
 	protected function translate_cpt_archive_link( $link, $lang ) {
-		$lang = ACF()->model->get_language( $lang );
-		$link = ACF()->links_model->switch_language_in_link( $link, $lang );
+		$lang = ACFAPI()->model->get_language( $lang );
+		$link = ACFAPI()->links_model->switch_language_in_link( $link, $lang );
 
-		foreach ( array_keys( ACF()->translate_slugs->slugs_model->get_translatable_slugs() ) as $type ) {
+		foreach ( array_keys( ACFAPI()->translate_slugs->slugs_model->get_translatable_slugs() ) as $type ) {
 			// Unfortunately ACF does not pass the post type, so let's try with all post type archives.
 			if ( 0 === strpos( $type, 'archive_' ) ) {
-				$link = ACF()->translate_slugs->slugs_model->switch_translated_slug( $link, $lang, $type );
+				$link = ACFAPI()->translate_slugs->slugs_model->switch_translated_slug( $link, $lang, $type );
 			}
 		}
 		return $link;
@@ -214,24 +215,24 @@ class TBIB_ACF_Auto_Translate {
 		switch ( $field['type'] ) {
 			case 'image':
 			case 'file':
-				if ( ACF()->options['media_support'] ) {
+				if ( ACFAPI()->options['media_support'] ) {
 					$return = 0;
 					if ( $tr_id = pll_get_post( $value, $lang ) ) {
 						$return = $tr_id;
 					} elseif ( $create_if_not_exists ) {
-						$return = ACF()->posts->create_media_translation( $value, $lang );
+						$return = ACFAPI()->posts->create_media_translation( $value, $lang );
 					}
 				}
 				break;
 
 			case 'gallery':
-				if ( ACF()->options['media_support'] && is_array( $value ) ) {
+				if ( ACFAPI()->options['media_support'] && is_array( $value ) ) {
 					$return = array();
 					foreach ( $value as $img ) {
 						if ( $tr_id = pll_get_post( $img, $lang ) ) {
 							$return[] = $tr_id;
 						} elseif ( $create_if_not_exists ) {
-							$return[] = ACF()->posts->create_media_translation( $img, $lang );
+							$return[] = ACFAPI()->posts->create_media_translation( $img, $lang );
 						}
 					}
 					$return = array_map( 'strval', $return ); // See acf_field_gallery::update_value().
