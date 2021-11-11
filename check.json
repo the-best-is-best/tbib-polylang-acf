@@ -5,7 +5,7 @@
 	"upgrade_notice": "Here's why you should upgrade...",
 
 	"last_updated": "2021-011-11 11:37:00",
-	"requires": 5.4,
+	"requires": "5.4",
 	"version" : "2.0",
 	"author" : "Michelle Raouf - TBIB",
 	"download_url" : "https://github.com/the-best-is-best/tbib-polylang-acf/releases/download/tbib-polylang-acf-v1/tbib-polylang-acf-master.zip",
