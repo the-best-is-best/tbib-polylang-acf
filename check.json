@@ -2,7 +2,7 @@
 	"name" : "TBIB Polylang ACF",
 	"version" : "2.0",
 	"author" : "John Smith",
-	"download_url" : "http://example.com/plugins/my-cool-plugin.zip",
+	"download_url" : "https://github.com/the-best-is-best/tbib-polylang-acf/releases/download/tbib-polylang-acf-v1/tbib-polylang-acf-master.zip",
 	"sections" : {
 		"description" : "Adds multilingual capability to ACF With Polylang."
 	}
