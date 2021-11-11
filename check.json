@@ -5,15 +5,15 @@
 	"slug" : "tbib-polylang-acf",
 	"homepage": "https://github.com/the-best-is-best/tbib-polylang-acf/",
 
-	"download_url" : "https://github.com/the-best-is-best/tbib-polylang-acf/releases/download/tbib-polylang-acf-v1/tbib-polylang-acf-master.zip",
-	"version": "1.0",
+	"download_url" : "https://github.com/the-best-is-best/tbib-polylang-acf/releases/download/tbib-polylang-acf-v1/tbib-update-plugin.zip",
+	"version": "1.1",
 	"requires": "4.0",
 	"tested": "5.8",
-	"last_updated": "2021-11-11 11:37:00",
-	"upgrade_notice": "Here's why you should upgrade...",
+	"last_updated": "2021-11-11 12:43:00",
+	"upgrade_notice": "Support auto update...",
 	"author" : "Michelle Raouf - TBIB",
 	"sections": {
-	"description": "(Required) Plugin description. Basic HTML can be used in all sections.",
-	"installation": "(Recommended) Installation instructions."
+	"description": "(Required) <h2>Support auto update</h2>.",
+	"installation": "(Recommended) Support auto update."
   }
 }
