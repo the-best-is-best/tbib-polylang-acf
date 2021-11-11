@@ -3,7 +3,7 @@
 
  * Plugin Name:       TBIB Polylang ACF
  * Description:       Adds multilingual capability to ACF With Polylang
- * Version:           1.0
+ * Version:           1.1
  * Requires at least: 5.4
  * Requires PHP:      5.6
  * Author:            Michelle Raouf - TBIB
