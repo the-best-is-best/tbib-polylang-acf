@@ -15,6 +15,6 @@
 	"sections": {
 	"description": "<h4> Created </h4> <p> Adds multilingual capability to ACF With Polylang. </p>",
 	"installation": "Add multilingual capability to ACF With Polylang.",
-        "changelog": "(Recommended) Changelog. <p>Solve error display when edit ACF fields.</p>"
+        "changelog": "(Recommended) Changelog. <p>Fix error display when edit ACF fields.</p>"
   }
 }
