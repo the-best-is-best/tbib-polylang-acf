@@ -1,0 +1,9 @@
+{
+	"name" : "TBIB Polylang ACF",
+	"version" : "2.0",
+	"author" : "John Smith",
+	"download_url" : "http://example.com/plugins/my-cool-plugin.zip",
+	"sections" : {
+		"description" : "Adds multilingual capability to ACF With Polylang."
+	}
+}
