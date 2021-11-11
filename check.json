@@ -10,10 +10,10 @@
 	"requires": "4.0",
 	"tested": "5.8",
 	"last_updated": "2021-11-11 12:43:00",
-	"upgrade_notice": "Support auto update...",
+	"upgrade_notice": "Test",
 	"author" : "Michelle Raouf - TBIB",
 	"sections": {
-	"description": "Test : <h1>Support auto update</h1>.",
-	"installation": "(Recommended) Support auto update."
+	"description": "<h3> Created <h3> <p> Adds multilingual capability to ACF With Polylang. </p>",
+	"installation": "Adds multilingual capability to ACF With Polylang."
   }
 }
