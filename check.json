@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/the-best-is-best/tbib-polylang-acf/",
 
 	"download_url" : "https://github.com/the-best-is-best/tbib-polylang-acf/releases/download/tbib-polylang-acf-v1/tbib-polylang-acf-master.zip",
-	"version": "2.0",
+	"version": "1.0",
 	"requires": "4.0",
 	"tested": "5.8",
 	"last_updated": "2021-11-11 11:37:00",
