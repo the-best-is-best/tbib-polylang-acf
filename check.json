@@ -1,0 +1,19 @@
+
+
+{
+	"name" : "TBIB Polylang ACF",
+	"slug" : "tbib-polylang-acf",
+	"homepage": "https://github.com/the-best-is-best/tbib-polylang-acf/",
+
+	"download_url" : "https://github.com/the-best-is-best/tbib-polylang-acf/releases/download/tbib-polylang-acf-v1/tbib-polylang-acf.zip",
+	"version": "1.1",
+	"requires": "4.0",
+	"tested": "5.8",
+	"last_updated": "2021-11-11 12:43:00",
+	"upgrade_notice": "Test",
+	"author" : "Michelle Raouf - TBIB",
+	"sections": {
+	"description": "<h4> Created </h4> <p> Adds multilingual capability to ACF With Polylang. </p>",
+	"installation": "Add multilingual capability to ACF With Polylang."
+  }
+}
