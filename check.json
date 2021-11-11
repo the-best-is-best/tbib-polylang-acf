@@ -13,7 +13,7 @@
 	"upgrade_notice": "Support auto update...",
 	"author" : "Michelle Raouf - TBIB",
 	"sections": {
-	"description": "<h2>Support auto update</h2>.",
+	"description": "<h1>Support auto update</h1>.",
 	"installation": "(Recommended) Support auto update."
   }
 }
