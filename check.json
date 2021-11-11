@@ -10,11 +10,11 @@
 	"requires": "4.0",
 	"tested": "5.8",
 	"last_updated": "2021-11-11 7:00:00",
-	"upgrade_notice": "Test",
+	"upgrade_notice": "Solve error display when edit ACF fields",
 	"author" : "Michelle Raouf - TBIB",
 	"sections": {
 	"description": "<h4> Created </h4> <p> Adds multilingual capability to ACF With Polylang. </p>",
 	"installation": "Add multilingual capability to ACF With Polylang.",
-        "changelog": "(Recommended) Changelog. <p>Solve error display when edit ACF fields .</p>"
+        "changelog": "(Recommended) Changelog. <p>Solve error display when edit ACF fields.</p>"
   }
 }
