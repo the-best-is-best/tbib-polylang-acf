@@ -1,4 +1,4 @@
 <?php
-function ACFAPI() { // PHPCS:ignore WordPress.NamingConventions.ValidFunctionName
-	return $GLOBALS['polylang'];
+function ACFAPI_DEMO() { // PHPCS:ignore WordPress.NamingConventions.ValidFunctionName
+	return $GLOBALS['tbib_language'];
 }

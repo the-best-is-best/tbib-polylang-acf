@@ -9,7 +9,7 @@ require_once plugin_dir_path( __FILE__ )   . 'api/acf.php';
  *
  * @since 2.7
  */
-class TBIB_ACF_Sync_Metas {
+class TBIB_ACF_DEMO_Sync_Metas {
 
 	/**
 	 * Constructor.
@@ -101,7 +101,7 @@ class TBIB_ACF_Sync_Metas {
 			'copy_once' => __( 'Copy once', 'polylang-pro' ),
 			'sync'      => __( 'Synchronize', 'polylang-pro' ),
 		);
-		$default = in_array( 'post_meta', ACFAPI()->options['sync'] ) ? 'sync' : 'copy_once';
+		$default = in_array( 'post_meta', ACFAPI_DEMO()->options['sync'] ) ? 'sync' : 'copy_once';
 		$this->render_field_setting( $field, $choices, $default );
 	}
 

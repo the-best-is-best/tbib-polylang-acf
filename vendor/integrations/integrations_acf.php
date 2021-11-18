@@ -1,6 +1,6 @@
 <?php
 
-class ACF_Integrations {
+class ACF_Integrations_Demo {
 	/**
 	 * Singleton instance.
 	 *
@@ -36,4 +36,4 @@ class ACF_Integrations {
 	}
 }
 
-class_alias( 'ACF_Integrations', 'ACF_Plugins_Compat' ); // For Backward compatibility.
+class_alias( 'ACF_Integrations_Demo', 'ACF_Plugins_Compat_DEMO' ); // For Backward compatibility.

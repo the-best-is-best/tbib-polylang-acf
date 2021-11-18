@@ -7,6 +7,7 @@
  * Version:           1.2
  * Requires at least: 5.4
  * Requires PHP:      5.6
+ * Text Domain:       tbib-polylang-acf
  * Author:            Michelle Raouf - TBIB
  * **/
 
@@ -14,12 +15,21 @@
 if (!defined('ABSPATH')) {
     exit; // Don't access directly.
 };
+require_once __DIR__ .'/vendor/autoload.php';
 if (!function_exists('is_plugin_active')) {
     include_once(ABSPATH . 'wp-admin/includes/plugin.php');
 }
+define('TBIB_POLYLANG_DEMO_ACF_FILE', __FILE__); // This file.
+
+define('TBIB_POLYLANG_DEMO_ACF_BASENAME', plugin_basename(TBIB_POLYLANG_DEMO_ACF_FILE)); // Plugin name as known by WP.
+
+
 
 add_action("plugins_loaded", "load", 15);
-
+$actve = new RequirementsPolylangACF();
+if(!$actve){
+    return;
+}
 function load()
 {
 

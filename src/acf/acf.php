@@ -8,14 +8,14 @@ require_once plugin_dir_path(__FILE__) . 'acf-auto-translate.php';
  *
  * @since 2.0
  */
-class TBIB_ACF {
+class TBIB_ACF_DEMO {
 	/**
-	 * @var TBIB_ACF_Sync_Metas
+	 * @var TBIB_ACF_DEMO_Sync_Metas
 	 */
 	public $sync_metas;
 
 	/**
-	 * @var TBIB_ACF_Auto_Translate
+	 * @var TBIB_ACF_DEMO_Auto_Translate
 	 */
 	public $auto_translate;
 
@@ -42,8 +42,8 @@ class TBIB_ACF {
 
 		add_action( 'wp_ajax_acf_post_lang_choice', array( $this, 'acf_post_lang_choice' ) );
 
-		$this->sync_metas     = new TBIB_ACF_Sync_Metas();
-		$this->auto_translate = new TBIB_ACF_Auto_Translate();
+		$this->sync_metas     = new TBIB_ACF_DEMO_Sync_Metas();
+		$this->auto_translate = new TBIB_ACF_DEMO_Auto_Translate();
 	}
 
 	/**
